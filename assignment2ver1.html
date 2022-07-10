@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 2 Version 1</title>
+    </head>
+
+    <link rel="stylesheet" href="Style21.css">
+
+    <body>
+        <p class= "p1" class="p2"><a style="color: blue" href="">HOME</a></p>
+        <p class= "p1" ><a style="color: blue" href="">ABOUT</a></p>
+        <p class= "p1"><a style="color: blue" href="">BOOK</a></p>
+        <p class= "p1"><a style="color: blue" href="">CONTACT</a></p>
+        <input type="text" class="query" placeholder="search for this website"><button class="button1" type="button">search</button>
+        <script>
+            let query = document.querySelector(".query");
+            let button1 = document.querySelector(".button1");
+
+            button1.onclick = function(){
+                let url = "https://www.google.com/search?q="+query.value;
+                window.open(url);
+            }
+        </script>
+        <table class="table1">
+            <tr>
+                <th></th>
+                <th>Withdraw</th>
+                <th>Credit</th>
+                <th>Balance</th>
+            </tr>
+            <tr>
+                <th class="thtd">September</th>
+                <td class="td1">$250</td>
+                <td class="td1">$660</td>
+                <td class="td1">$410</td>
+            </tr>
+        </table>
+        <img class="img1" src="yellow.jpg" alt="Yellow Teletubby">
+        <div>
+            <p class= "p3">This is the hotpink paragraph, font family is Arial</p>
+            <p class= "p4">This is the pink paragraph, font family is Courier</p>
+            <p class= "p5">This is the lightpink paragraph,font family is Corsiva</p>
+            <button type="button">This is another button</button>
+        </div>
+        <textarea>&ltp&gtStudy button, input, form, and textarea elements &lt/p&gt</textarea> <br>
+        <iframe src="assignment1.html" width="50%" height="375px"></iframe>
+        <table class="table2">
+            <tr>
+                <td class="td2">
+                    <img src="tbred.jfif" alt="teletubby red" width="100%" height="200px">
+                    <p class="p6">some text</p>
+                    <p class="p6">some text</p>
+                    <p class="p6">some text</p>
+                </td>
+                <td class="td2">
+                    <img src="tbpurp.jpg" alt="teletubby purple" width="100%" height="200px">
+                    <p class="p6">some text</p>
+                    <p class="p6">some text</p>
+                    <p class="p6">some text</p>
+                </td>
+                <td class="td2">
+                    <img src="tbgreen.jfif" alt="teletubby green" width="100%" height="200px">
+                    <p class="p6">some text</p>
+                    <p class="p6">some text</p>
+                    <p class="p6">some text</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
